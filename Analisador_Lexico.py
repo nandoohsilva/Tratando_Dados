@@ -54,3 +54,20 @@ os.system('cls')
 # Fim de arquivo inesperado (comentario de bloco nao fechado)
 # Caractere ou string mal formados
 # ==============================================================================
+
+def __init__(self):
+    self.operadores_matematicos = ['+', '-', '/', '*', '^']
+    self.operadores = [':=', '==', '<<', '<=', '>>', '>=', '&&', '||']
+    self.
+arquivo_input = open('dados.txt', 'rb')
+arquivo_output = open('resp_lex.txt', 'wb')
+
+#ler linha a linha
+lines = arquivo_input.readlines()
+
+for line in lines:
+
+    linedecodificada = line.decode('UTF-8')
+    line = linedecodificada.split()
+
+    print (line)
